@@ -19,13 +19,17 @@ This project performs an in-depth exploratory data analysis (EDA) on a dataset o
 
 ## 📈 Featured Visualizations
 
-### 1. The Redeye Discount (Multivariate Analysis)
+Below is the visualization showing the linear relationship between Coach and First-Class seating, categorized by weekend vs. weekday travel.
 
-Using categorical color encoding, we identified that while Redeye flights are cheaper, the "Weekend Effect" is a more powerful driver of price than the time of day.
+<img width="2437" height="1586" alt="Correlation Analysis: Weekend vs  Weekday Tiers" src="https://github.com/user-attachments/assets/d307809a-3582-4e39-892f-2c12ac38fd87" />
 
-### 2. Feature Value Analysis
+**Insight:** Notice how the "Weekend" regression line (Red/Orange) is consistently higher than the "Weekday" line (Blue), showing a clear price lift across both seating tiers during the weekend.
 
-A comparative study of amenities showed that while meals are often bundled into the base price, Wi-Fi is a significant indicator of a premium price bracket.
+This multivariate analysis examines how "Inflight Features" correlate with ticket pricing.
+
+<img width="5367" height="1768" alt="amenities_price_impact" src="https://github.com/user-attachments/assets/bbca8eb8-8ecf-4a21-8e6f-27e0a5183410" />
+
+**Key Finding:** While **Inflight Meals** have almost no impact on the base price (the distributions are nearly identical), **Inflight Wi-Fi** shows a significant upward shift in price. This suggests that Wi-Fi is a "premium" feature indicator, while meals are likely a standard commodity.
 
 ## 💡 Top 3 Insights for Stakeholders
 1. **Strategic Booking:** The "upgrade gap" between Coach and First-Class is narrowest on Tuesdays and Wednesdays, offering the best value for luxury travelers.
