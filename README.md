@@ -1,38 +1,38 @@
-# flight_revenue_insights
-
-# ✈️ Airline Pricing Strategy: Exploratory Data Analysis
-**An investigation into ticket price drivers using Python and Seaborn.**
+# ✈️ Airline Pricing Strategy & Customer Behavior Analysis
 
 ## 📌 Project Overview
-This project analyzes a dataset of over 120,000 flight records to uncover how different factors influence airline ticket prices. By performing Exploratory Data Analysis (EDA), I identified key trends in seating tiers, timing, and passenger amenities to provide actionable insights for travel agencies and budget-conscious travelers.
+This project performs an in-depth exploratory data analysis (EDA) on a dataset of over 120,000 flight records. The goal is to identify pricing trends and the impact of various features (amenities, timing, and flight duration) to provide actionable insights for a travel agency.
 
-## 🚀 Key Business Insights
-* **The Weekend Premium:** Weekend travel shows a consistent price surge. I quantified the "gap" between weekday and weekend flights to identify optimal booking windows.
-* **Amenity Impact:** Analysis revealed that while inflight meals are often "price-neutral," features like **Inflight Wi-Fi** and **Entertainment** are primary indicators of premium pricing tiers.
-* **Redeye Efficiency:** Overnight flights offer a reliable discount across all days of the week, though the "Weekend Effect" remains the dominant price driver.
+## 📊 Key Business Questions Answered
+* **What is the "Weekend Premium"?** Identifying how much more customers pay for Saturday/Sunday travel.
+* **Are Amenities Worth It?** Quantifying the price increase associated with Wi-Fi, meals, and entertainment.
+* **Redeye Savings:** Determining if overnight flights offer a consistent discount across different days of the week.
+* **Pricing Correlation:** Analyzing the relationship between Coach and First-Class ticket tiers.
 
-## 🛠️ Technical Skills Demonstrated
-* **Data Cleaning & Sampling:** Handled a large dataset (120k+ rows) by utilizing strategic random sampling (`flight_sub`) to maintain performance and visual clarity.
-* **Multivariate Visualization:** * Used `sns.lmplot` with `hue` to compare regression trends between different groups.
-    * Applied **Jittering** and **Alpha Blending** to scatter plots to reveal data density and avoid overplotting.
-    * Created grouped **Box Plots** to analyze price distributions across categorical variables.
-* **Reproducible Research:** Established a clean project structure with a `requirements.txt` and clear Markdown documentation.
+## 🛠️ Tech Stack & Skills
+* **Python:** Core data processing.
+* **Pandas:** Data cleaning and subsetting for performance.
+* **Seaborn & Matplotlib:** Advanced data visualization, including:
+    * **Jittering & Alpha Blending** to handle high-density data (Overplotting).
+    * **Multivariate Box Plots** for temporal analysis.
+    * **Regression Modeling** (`lmplot`) to visualize pricing correlations.
 
-## 📊 Featured Visualizations
+## 📈 Featured Visualizations
 
-### 1. Pricing Trends: Weekends vs. Weekdays
+### 1. The Redeye Discount (Multivariate Analysis)
 
-*This chart shows the distinct "lift" in First-Class pricing relative to Coach prices during weekend travel.*
+Using categorical color encoding, we identified that while Redeye flights are cheaper, the "Weekend Effect" is a more powerful driver of price than the time of day.
 
-### 2. The Redeye Discount Distribution
+### 2. Feature Value Analysis
 
-*A visualization of how overnight flights consistently underprice daytime flights across a 7-day schedule.*
+A comparative study of amenities showed that while meals are often bundled into the base price, Wi-Fi is a significant indicator of a premium price bracket.
 
-## 📂 Repository Structure
-* `airline_analysis.ipynb`: The primary Jupyter Notebook containing all code and visualizations.
-* `requirements.txt`: List of dependencies (Pandas, Seaborn, Matplotlib).
-* `images/`: Exported high-resolution plots for reporting.
+## 💡 Top 3 Insights for Stakeholders
+1. **Strategic Booking:** The "upgrade gap" between Coach and First-Class is narrowest on Tuesdays and Wednesdays, offering the best value for luxury travelers.
+2. **Amenity Optimization:** Travelers looking for the absolute lowest fare should specifically filter for flights without Wi-Fi, as these show the most significant price separation from the mean.
+3. **Operational Consistency:** Despite variations in flight length (1-8 hours), passenger volume remains stable, suggesting consistent aircraft utilization across the fleet.
 
----
-**Author:** [Your Name]
-**LinkedIn:** [Your Link Here]
+## 🚀 How to Run
+1. Clone the repository.
+2. Ensure you have `pandas`, `seaborn`, and `matplotlib` installed.
+3. Open `flight_revenue_insights.ipynb` in Jupyter Notebook or VS Code.
