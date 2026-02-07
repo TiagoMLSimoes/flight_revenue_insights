@@ -1,0 +1,5 @@
+### 🚀 Future Improvements & Next Steps
+If given more time or data, I would expand this project in the following ways:
+* **Predictive Modeling:** Use the features identified in this EDA (weekend status, amenities, redeye) to build a Linear Regression model that predicts ticket prices with an estimated margin of error.
+* **Geographic Analysis:** Incorporate origin and destination data to see if certain "hubs" have higher premiums regardless of amenities.
+* **Time-Series Forecasting:** Analyze seasonality by looking at data across months (Summer vs. Winter) to identify the best time of year to book.
