@@ -47,5 +47,6 @@ If given more time or data, I would expand this project in the following ways:
 * **Geographic Analysis:** Incorporate origin and destination data to see if certain "hubs" have higher premiums regardless of amenities.
 * **Time-Series Forecasting:** Analyze seasonality by looking at data across months (Summer vs. Winter) to identify the best time of year to book.
 
-* **Author:** Tiago Simões
+**Author:** Tiago Simões
+
 **LinkedIn:** www.linkedin.com/in/tiago-simões-930144387
