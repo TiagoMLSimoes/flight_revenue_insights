@@ -36,3 +36,9 @@ A comparative study of amenities showed that while meals are often bundled into 
 1. Clone the repository.
 2. Ensure you have `pandas`, `seaborn`, and `matplotlib` installed.
 3. Open `flight_revenue_insights.ipynb` in Jupyter Notebook or VS Code.
+
+4. ### 🚀 Future Improvements & Next Steps
+If given more time or data, I would expand this project in the following ways:
+* **Predictive Modeling:** Use the features identified in this EDA (weekend status, amenities, redeye) to build a Linear Regression model that predicts ticket prices with an estimated margin of error.
+* **Geographic Analysis:** Incorporate origin and destination data to see if certain "hubs" have higher premiums regardless of amenities.
+* **Time-Series Forecasting:** Analyze seasonality by looking at data across months (Summer vs. Winter) to identify the best time of year to book.
